@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.jw {
+    background: linear-gradient(rgb(160, 93, 26),green);
+    width: 100vw;
+    height: 100vh;
+
+    /* flex */
+    display: flex;
+    /* 수직축 */
+    align-items: center;
+    /* 수평축 */
+    justify-content: center;
+}
