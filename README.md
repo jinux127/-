@@ -5,3 +5,5 @@
 학습하는 것에 즐거움을 느끼려 노력합니다.
 
 day 01 - html, css
+
+day 02 - html, css
