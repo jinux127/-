@@ -7,3 +7,5 @@
 day 01 - html, css
 
 day 02 - html, css
+
+day 03 - html, css (grid, media query)
