@@ -12,7 +12,7 @@
     transform: translate(100px, 200px);
 
     /* css3 의 최신언어 */
-    /* 접두사 필요할 경우 */
+    /* prefix 접두사 필요할 경우 */
     /* -webkit-  크롬, 사파리*/
     /* -moz- 파이어폭스*/
     /* -ms-  익스플로러 9.0*/
@@ -35,3 +35,47 @@
 
 /* 가상 선택자 :hover */
 #transition :hover { width: 300px;}
+
+#animation{
+    width: 300px;
+    height: 100px;
+    background-color: darkblue;
+    /* 이름은 변수처럼 유동적 */
+    animation-name: aniname;
+    /* 작동시간 */
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    /* 몇번 반복할 것인지 */
+    animation-iteration-count: 6;
+    /* alternate : 시작 -> 끝 -> 시작 */
+    /* normal : 시작 -> 끝, 끝 -> 시작*/
+    /* reverse : 끝 -> 시작, 시작 -> 끝*/
+    animation-direction: alternate;
+    /* 한줄로 가능함 */
+    /* 만약 prefix를 사용한다면  keyframes에도 똑같이 사용해야함 */
+    animation: aniname 3s linear 1s 6 alternate;
+}
+/* animation에 꼭 필요한 값  */
+/* animation-name에서 지정한 이름을 설정 */
+/* 만약 prefix를 사용한다면  keyframes에도 똑같이 사용해야함 */
+@keyframes aniname {
+    /* 효과가 어떻게 나타날지 설정한다. */
+    /* from { width: 300px; }
+    to { width: 600px; } */
+    
+    /* 만약 prefix를 사용한다면  keyframes에도 똑같이 사용해야함 */
+    from { transform: rotate(-10deg); }
+    to { transform: rotate(10deg); }
+}
+
+/* 
+.box1 {
+    -webkit-animation: rotation 3s linear 1s 6 alternate;
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(-10deg); }
+    to {-webkit-transform: rotate(10deg); }
+}
+*/
