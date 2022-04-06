@@ -1,0 +1,37 @@
+#transtion{
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    /* 입력한 각도만큼 회전, 음수 가능 */
+    transform: rotate(30deg);
+    /* width 2배, heigth 3배  */
+    transform: scale(2,3); 
+    /* x,y축 기준 각도 비틂 */
+    transform: skew(10deg,20deg);
+    /* 좌표 변경 */
+    transform: translate(100px, 200px);
+
+    /* css3 의 최신언어 */
+    /* 접두사 필요할 경우 */
+    /* -webkit-  크롬, 사파리*/
+    /* -moz- 파이어폭스*/
+    /* -ms-  익스플로러 9.0*/
+    /* -o-  오페라*/
+    /* ex) -webkit-transform: translate(100px,200px) */
+    
+    /* 효과를 적용하고자 하는 css 속성 */
+    transition-property: width;
+    /* 효과가 나타나는데 걸리는 시간 */
+    transition-duration: 2s;
+    /* 효과의 속도 */
+    transition-timing-function: linear;
+    /* 특정 시간뒤에 효과 발동 */
+    transition-delay: 1s;
+    /* 한줄로 표현 가능 초는 duration, delay 순서임 */
+    /* 숫자가 하나인 경우엔 duration */
+    transition: width 2s linear 1s;
+
+}
+
+/* 가상 선택자 :hover */
+#transition :hover { width: 300px;}
