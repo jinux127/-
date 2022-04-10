@@ -1,0 +1,34 @@
+.media {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+
+/* 미디어쿼리 */
+/* 최소 최대 가로폭 설정 */
+@media (min-width: 320px) and (max-width: 800px) {
+    .media {
+        width: 300px;
+        height: 300px;
+        background-color: yellow;
+        border: solid yellow 10px;
+    }
+}
+/* 주의사항 */
+
+/* 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    meta태그에 name="viewport" 반드시 기입되어 있어야한다.
+    다양한 디지털 기기의 화면 상에 표시되는 영역을 의미
+    너비와 배율을 설정할 때 사용하는 메타 태그의 속성 중 하나
+
+    width=device-width => viewport의 가로폭 = 디바이스의 가로폭
+    initial-scale=1.0 => 비율은 항상 1.0  
+*/
+
+/* 미디어 쿼리 상속
+
+    미디어 쿼리는 외부 영역에 있는 CSS 속성을 상속받음
+    만약 상속 받지 않고자 하면 속성값을 none 입력할 것!
+*/

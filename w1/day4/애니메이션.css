@@ -17,7 +17,7 @@
     /* -moz- 파이어폭스*/
     /* -ms-  익스플로러 9.0*/
     /* -o-  오페라*/
-    /* ex) -webkit-transform: translate(100px,200px) */
+    /* ex) -webkit-transform: tran slate(100px,200px) */
     
     /* 효과를 적용하고자 하는 css 속성 */
     transition-property: width;
